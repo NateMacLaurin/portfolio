@@ -43,13 +43,14 @@
             border-radius: 20px;
             border: 1px solid rgb(240, 239, 239);
             margin: 10px 20px;
+            display: flex;
             align-items: center;
             justify-content: center;
             color: white;
             position: relative;
             transition: all .5s ease;
             cursor: pointer;
-            
+
             h3{
                 position: absolute;
                 font-size: 20px;
@@ -62,7 +63,8 @@
                 object-fit: cover;
                 z-index: 1;
             }
-
+            
+            //fade out image on hover to show text and background color
             &:hover{
                 background-color: $mainColor;
                 img{
