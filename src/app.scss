@@ -1,0 +1,25 @@
+.app{
+    height: 100vh;
+
+    .sections{
+        width: 100%;
+        height: calc(100vh - 70px);
+        background-color: lightsalmon;
+        position: relative;
+        top: 70px;
+        scroll-behavior: smooth;
+        //snap scrolling TODO: figure out why it scrolls two at a time
+        scroll-snap-type: y mandatory;
+        scrollbar-width: none; //for firefox
+        &::-webkit-scrollbar{
+            display: none; //chrome etc
+        }
+
+        > *{
+            width: 100vw;
+            height: calc(100vh - 70px);
+            //snap scrolling
+            scroll-snap-align: start;
+        }
+    }
+}
